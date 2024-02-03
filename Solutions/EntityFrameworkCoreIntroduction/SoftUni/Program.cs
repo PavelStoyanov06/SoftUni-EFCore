@@ -1,5 +1,8 @@
-﻿using SoftUni;
+﻿using Microsoft.EntityFrameworkCore;
+using SoftUni;
 using SoftUni.Data;
+using SoftUni.Models;
+using System.Xml;
 
 public class Program
 {
@@ -7,7 +10,5 @@ public class Program
     {
         Console.WriteLine("Hello, World!");
         using SoftUniContext context = new SoftUniContext();
-
-        StartUp.GetEmployeesFromResearchAndDevelopment(context);
     }
 }
